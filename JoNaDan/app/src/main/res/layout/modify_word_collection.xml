@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="단어모음 제목"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/makeTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="만든 시간 : "
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/answerRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="정답률 : "
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/makeTime" />
+
+    <ListView
+        android:id="@+id/wordList"
+        android:layout_width="355dp"
+        android:layout_height="370dp"
+        android:layout_marginTop="10dp"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/answerRate">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/addWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:text="추가하기"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/wordList"
+        app:layout_constraintTop_toBottomOf="@+id/wordList" />
+
+    <TextView
+        android:id="@+id/wordNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:text="단어수 : "
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeTime" />
+
+    <TextView
+        android:id="@+id/noWord"
+        android:layout_width="355dp"
+        android:layout_height="370dp"
+        android:gravity="center"
+        android:text="단어가 없습니다.\n단어를 추가해주세요."
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/wordList"
+        app:layout_constraintEnd_toEndOf="@+id/wordList"
+        app:layout_constraintStart_toStartOf="@+id/wordList"
+        app:layout_constraintTop_toTopOf="@+id/wordList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

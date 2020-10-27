@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="47dp"
+        android:text="어장"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="47dp"
+        android:text="를 위한"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="85dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="100dp"
+        android:text="조"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="85dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="76dp"
+        android:text="나"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="85dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="76dp"
+        android:text="단"
+        android:textColor="@android:color/black"
+        android:textSize="80sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="177dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="142dp"
+        android:text="금 부족한"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="178dp"
+        android:gravity="center"
+        android:text="made by\nLABORY"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="단어모음 제목"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/problem"
+        android:layout_width="409dp"
+        android:layout_height="164dp"
+        android:gravity="center"
+        android:text="문제"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/firstExample"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:background="#BEE4E1"
+        android:text="1. 보기"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problem" />
+
+    <TextView
+        android:id="@+id/secondExample"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#BEE4E1"
+        android:text="2. 보기"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/firstExample"
+        app:layout_constraintTop_toBottomOf="@+id/firstExample" />
+
+    <TextView
+        android:id="@+id/thirdExample"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#BEE4E1"
+        android:text="3. 보기"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/firstExample"
+        app:layout_constraintTop_toBottomOf="@+id/secondExample" />
+
+    <TextView
+        android:id="@+id/forthExample"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#BEE4E1"
+        android:text="4. 보기"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/firstExample"
+        app:layout_constraintTop_toBottomOf="@+id/thirdExample" />
+
+    <Button
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:background="@color/colorAccent"
+        android:text="PASS"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/giveUp" />
+
+    <Button
+        android:id="@+id/giveUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="344dp"
+        android:background="@color/colorCancle"
+        android:text="나가기"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/problem" />
+
+    <TextView
+        android:id="@+id/problemNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="20dp"
+        android:text="문제수"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
